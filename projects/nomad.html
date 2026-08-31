@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="AXIS Nomad engineering project by Logan Schaefer — mechanical design, additive manufacturing, component packaging, and mobile robotics."
+  />
+
+  <title>AXIS Nomad | Logan Schaefer Engineering Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="../index.html">
+        LS<span>.</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a class="nav-cta" href="../index.html#contact">Contact</a>
+      </nav>
+
+      <button
+        class="menu-btn"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="project-hero">
+      <div class="container">
+
+        <a class="back-link" href="../index.html#projects">
+          ← Back to Projects
+        </a>
+
+        <div class="project-hero-grid">
+
+          <div>
+            <div class="eyebrow">
+              MOBILE ROBOTICS · MECHANICAL DESIGN · ADDITIVE MANUFACTURING
+            </div>
+
+            <h1 class="project-title">
+              AXIS <span>Nomad</span>
+            </h1>
+
+            <p class="project-lead">
+              A compact, modular mobile robotics platform being developed as a
+              physical endpoint for AXIS. Current development is focused on
+              mechanical packaging, design for additive manufacturing,
+              Raspberry Pi integration, and creating a serviceable internal
+              architecture for future robotics hardware.
+            </p>
+
+            <div class="tags project-tags">
+              <span>Fusion 360</span>
+              <span>DfAM</span>
+              <span>Mechanical Packaging</span>
+              <span>Raspberry Pi</span>
+              <span>Robotics</span>
+              <span>Rapid Prototyping</span>
+            </div>
+
+          </div>
+
+
+          <div class="project-facts">
+
+            <div class="project-fact">
+              <span>STATUS</span>
+              <strong>Early Development</strong>
+            </div>
+
+            <div class="project-fact">
+              <span>PRIMARY CAD</span>
+              <strong>Fusion 360</strong>
+            </div>
+
+            <div class="project-fact">
+              <span>MANUFACTURING</span>
+              <strong>FDM 3D Printing</strong>
+            </div>
+
+            <div class="project-fact">
+              <span>COMPUTE PLATFORM</span>
+              <strong>Raspberry Pi</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-hero-image">
+          <img
+            src="../images/nomad/nomad-chassis-shell.png"
+            alt="AXIS Nomad chassis and exterior shell CAD assembly"
+          >
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- OVERVIEW -->
+    <section class="section alt">
+      <div class="container">
+
+        <div class="section-kicker">
+          01 — PROJECT OVERVIEW
+        </div>
+
+        <div class="project-two-column">
+
+          <h2>
+            Designing a compact robotics platform from the inside out.
+          </h2>
+
+          <div class="project-copy">
+
+            <p>
+              Nomad began as an effort to create a compact physical platform
+              capable of eventually extending AXIS into the real world.
+              Rather than treating the enclosure as a shell built around finished
+              electronics, the mechanical design is being developed around the
+              requirements of the individual subsystems.
+            </p>
+
+            <p>
+              The current work focuses on fitting the drivetrain, camera,
+              speakers, computing hardware, power electronics, and supporting
+              structures into a compact enclosure while keeping the design
+              modular and suitable for additive manufacturing.
+            </p>
+
+            <p>
+              The project is still in early development. The mechanical CAD shown
+              here represents the current design direction and should not be
+              interpreted as a completed autonomous robot.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- DESIGN GOALS -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-kicker">
+          02 — DESIGN GOALS
+        </div>
+
+        <div class="section-head">
+          <h2>Mechanical requirements</h2>
+
+          <p>
+            The enclosure and internal architecture are being designed around a
+            small set of core requirements.
+          </p>
+        </div>
+
+
+        <div class="design-goals-grid">
+
+          <div class="design-goal">
+            <span>01</span>
+            <h3>Compact</h3>
+            <p>
+              Package multiple mechanical and electronic subsystems within a
+              small mobile platform.
+            </p>
+          </div>
+
+          <div class="design-goal">
+            <span>02</span>
+            <h3>Modular</h3>
+            <p>
+              Allow individual mounts and internal structures to be replaced or
+              redesigned without rebuilding the entire chassis.
+            </p>
+          </div>
+
+          <div class="design-goal">
+            <span>03</span>
+            <h3>3D Printable</h3>
+            <p>
+              Develop the primary mechanical architecture around additive
+              manufacturing and rapid design iteration.
+            </p>
+          </div>
+
+          <div class="design-goal">
+            <span>04</span>
+            <h3>Serviceable</h3>
+            <p>
+              Maintain access to internal hardware for assembly, maintenance,
+              troubleshooting, and future upgrades.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- CHASSIS -->
+    <section class="section alt">
+      <div class="container">
+
+        <div class="section-kicker">
+          03 — CHASSIS ARCHITECTURE
+        </div>
+
+        <div class="section-head">
+          <h2>The mechanical foundation</h2>
+
+          <p>
+            Removing the exterior shell reveals the mounting structure beneath
+            the finished form.
+          </p>
+        </div>
+
+
+        <div class="engineering-image">
+          <img
+            src="../images/nomad/nomad-bare-chassis.png"
+            alt="AXIS Nomad lower chassis and internal structural features"
+          >
+        </div>
+
+
+        <div class="image-description">
+
+          <h3>Lower Chassis & Internal Structure</h3>
+
+          <p>
+            The lower chassis provides the structural foundation for the Nomad
+            mechanical system. Internal posts, mounting locations, walls,
+            openings, and clearance geometry provide defined locations for
+            subsystem hardware while supporting the removable upper structure.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- COMPONENT HOLDERS -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-kicker">
+          04 — SUBSYSTEM PACKAGING
+        </div>
+
+        <div class="section-head">
+          <h2>Hardware-specific mounting</h2>
+
+          <p>
+            Instead of treating every internal component as a generic block,
+            Nomad uses mounting structures designed around specific hardware.
+          </p>
+        </div>
+
+
+        <div class="project-image-grid">
+
+          <div class="engineering-card">
+
+            <img
+              src="../images/nomad/nomad-component-holders.png"
+              alt="Nomad speaker camera and motor mounting structures"
+            >
+
+            <div class="engineering-card-copy">
+
+              <span class="mini-label">
+                COMPONENT HOLDERS
+              </span>
+
+              <h3>Subsystem mounting structures</h3>
+
+              <p>
+                Mounting structures were developed for the speakers,
+                Raspberry Pi Camera Module 3 Wide NoIR, and drivetrain motors.
+                These components establish repeatable positions for hardware
+                inside the chassis.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="engineering-card">
+
+            <img
+              src="../images/nomad/nomad-holders-chassis.png"
+              alt="Nomad component mounting system integrated into chassis"
+            >
+
+            <div class="engineering-card-copy">
+
+              <span class="mini-label">
+                INTEGRATION
+              </span>
+
+              <h3>Mounts integrated into the chassis</h3>
+
+              <p>
+                The individual mounting structures are positioned inside the
+                lower chassis to evaluate alignment, available volume, component
+                relationships, and interference with surrounding structures.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- COMPUTE -->
+    <section class="section alt">
+      <div class="container">
+
+        <div class="section-kicker">
+          05 — COMPUTE PACKAGING
+        </div>
+
+        <div class="project-feature-layout">
+
+          <div class="engineering-image">
+            <img
+              src="../images/nomad/nomad-pi-packaging.png"
+              alt="Nomad Raspberry Pi mounting deck inside chassis"
+            >
+          </div>
+
+
+          <div class="project-feature-copy">
+
+            <span class="mini-label">
+              RASPBERRY PI INTEGRATION
+            </span>
+
+            <h2>Using vertical space</h2>
+
+            <p>
+              The Raspberry Pi mounting structure sits above lower-mounted
+              subsystems, allowing Nomad to use the available vertical volume
+              instead of placing every component on a single plane.
+            </p>
+
+            <p>
+              This layered layout helps separate major subsystem groups while
+              preserving the compact exterior dimensions of the platform.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- POWER -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-kicker">
+          06 — POWER PACKAGING
+        </div>
+
+        <div class="project-feature-layout reverse">
+
+          <div class="project-feature-copy">
+
+            <span class="mini-label">
+              POWER CONVERSION
+            </span>
+
+            <h2>Dedicated power-electronics mounting</h2>
+
+            <p>
+              A dedicated buck converter mounting location was incorporated into
+              the internal architecture rather than leaving the power electronics
+              unsupported inside the enclosure.
+            </p>
+
+            <p>
+              Providing defined locations for power, compute, drivetrain,
+              camera, and audio hardware helps make the overall system easier
+              to assemble and refine as the design develops.
+            </p>
+
+          </div>
+
+
+          <div class="engineering-image">
+            <img
+              src="../images/nomad/nomad-buck-converter.png"
+              alt="Nomad buck converter holder and subsystem mounting inside chassis"
+            >
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- CURRENT ASSEMBLY -->
+    <section class="section alt">
+      <div class="container">
+
+        <div class="section-kicker">
+          07 — CURRENT MECHANICAL DESIGN
+        </div>
+
+        <div class="section-head">
+
+          <h2>
+            Current printable architecture
+          </h2>
+
+          <p>
+            The current mechanical assembly combines the main structures
+            developed so far into one internal packaging system.
+          </p>
+
+        </div>
+
+
+        <div class="engineering-image large">
+          <img
+            src="../images/nomad/nomad-current-assembly.png"
+            alt="Current AXIS Nomad 3D printable mechanical assembly"
+          >
+        </div>
+
+
+        <div class="current-design-grid">
+
+          <div>
+            <span class="mini-label">
+              CURRENTLY DESIGNED
+            </span>
+
+            <h3>3D-printable components</h3>
+
+            <p>
+              The current CAD assembly includes the lower chassis, component
+              mounting structures, Raspberry Pi mounting structure, buck
+              converter holder, upper electronics deck, and supporting internal
+              geometry.
+            </p>
+          </div>
+
+
+          <div>
+            <span class="mini-label">
+              DESIGN APPROACH
+            </span>
+
+            <h3>Modular additive manufacturing</h3>
+
+            <p>
+              The internal architecture is being split into replaceable printed
+              components so individual structures can be modified and
+              reprinted as hardware requirements change.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- CURRENT STATUS -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-kicker">
+          08 — DEVELOPMENT STATUS
+        </div>
+
+        <div class="status-grid">
+
+          <div class="status-column">
+
+            <span class="mini-label">
+              CURRENT DEVELOPMENT
+            </span>
+
+            <h2>Designed / being developed</h2>
+
+            <ul>
+              <li>Lower chassis architecture</li>
+              <li>Exterior shell concepts</li>
+              <li>Camera mounting</li>
+              <li>Speaker mounting</li>
+              <li>Motor mounting</li>
+              <li>Raspberry Pi packaging</li>
+              <li>Buck converter mounting</li>
+              <li>Electronics deck</li>
+              <li>Modular 3D-printable structure</li>
+            </ul>
+
+          </div>
+
+
+          <div class="status-column">
+
+            <span class="mini-label">
+              FUTURE DEVELOPMENT
+            </span>
+
+            <h2>Planned</h2>
+
+            <ul>
+              <li>Complete drivetrain integration</li>
+              <li>Power-system refinement</li>
+              <li>Custom electronics and PCB integration</li>
+              <li>Motor control</li>
+              <li>Camera and perception software</li>
+              <li>Autonomous navigation</li>
+              <li>AXIS software integration</li>
+              <li>Prototype testing and mechanical iteration</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- CAD -->
+    <section class="section alt">
+      <div class="container">
+
+        <div class="section-kicker">
+          09 — CAD ACCESS
+        </div>
+
+        <div class="cad-access">
+
+          <div>
+
+            <h2>
+              Inspect the design
+            </h2>
+
+            <p>
+              CAD downloads and an interactive 3D model viewer can be added here
+              as the Nomad mechanical design becomes ready for public release.
+            </p>
+
+          </div>
+
+
+          <div class="cad-buttons">
+
+            <span class="btn secondary disabled-button">
+              Interactive Model — Coming Soon
+            </span>
+
+            <span class="btn secondary disabled-button">
+              STEP Download — Coming Soon
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- NEXT PROJECT -->
+    <section class="section">
+      <div class="container">
+
+        <a class="next-project" href="../index.html#projects">
+
+          <span>
+            BACK TO PORTFOLIO
+          </span>
+
+          <strong>
+            View all projects →
+          </strong>
+
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-wrap">
+
+      <span>
+        © <span id="year"></span> Logan Schaefer
+      </span>
+
+      <span>
+        AXIS Nomad · Engineering Portfolio
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="../script.js"></script>
+
+</body>
+</html>
