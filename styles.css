@@ -592,3 +592,29 @@ footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted)
   }
 
 }
+
+/* Project detail links */
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.2s ease, opacity 0.2s ease;
+}
+
+.project-link span {
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  opacity: 0.85;
+  gap: 14px;
+}
+
+.project-link:hover span {
+  transform: translateX(3px);
+}
