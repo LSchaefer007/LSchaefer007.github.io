@@ -73,17 +73,14 @@
             </h1>
 
             <p class="project-lead">
-              A compact, modular mobile robotics platform being developed as a
-              physical endpoint for AXIS. Current development is focused on
-              mechanical packaging, design for additive manufacturing,
-              Raspberry Pi integration, and creating a serviceable internal
-              architecture for future robotics hardware.
+              I’m designing Nomad as a small mobile robot and future AXIS endpoint. The CAD fits a Pi,
+              camera, speakers, motors, power electronics, and wiring into a printable chassis.
             </p>
 
             <div class="tags project-tags">
               <span>Fusion 360</span>
-              <span>DfAM</span>
-              <span>Mechanical Packaging</span>
+              <span>3D Printing</span>
+              <span>Component Packaging</span>
               <span>Raspberry Pi</span>
               <span>Robotics</span>
               <span>Rapid Prototyping</span>
@@ -142,30 +139,23 @@
         <div class="project-two-column">
 
           <h2>
-            Designing a compact robotics platform from the inside out.
+            Fitting the robot before building the shell.
           </h2>
 
           <div class="project-copy">
 
             <p>
-              Nomad began as an effort to create a compact physical platform
-              capable of eventually extending AXIS into the real world.
-              Rather than treating the enclosure as a shell built around finished
-              electronics, the mechanical design is being developed around the
-              requirements of the individual subsystems.
+              I wanted AXIS to have a physical robot. I’m laying out the hardware first, then shaping
+              the chassis around its clearances.
             </p>
 
             <p>
-              The current work focuses on fitting the drivetrain, camera,
-              speakers, computing hardware, power electronics, and supporting
-              structures into a compact enclosure while keeping the design
-              modular and suitable for additive manufacturing.
+              The CAD includes mounts for the motors, Camera Module 3 Wide NoIR, speakers, Pi, and
+              buck converter. Separate holders reduce chassis reprints.
             </p>
 
             <p>
-              The project is still in early development. The mechanical CAD shown
-              here represents the current design direction and should not be
-              interpreted as a completed autonomous robot.
+              Nomad is in early development. These are modeled parts, not a tested robot.
             </p>
 
           </div>
@@ -186,11 +176,10 @@
         </div>
 
         <div class="section-head">
-          <h2>Mechanical requirements</h2>
+          <h2>What the chassis needs to do</h2>
 
           <p>
-            The enclosure and internal architecture are being designed around a
-            small set of core requirements.
+            Four constraints guide the current CAD.
           </p>
         </div>
 
@@ -199,37 +188,33 @@
 
           <div class="design-goal">
             <span>01</span>
-            <h3>Compact</h3>
+            <h3>Small footprint</h3>
             <p>
-              Package multiple mechanical and electronic subsystems within a
-              small mobile platform.
+              Fit the hardware without making the robot unnecessarily large.
             </p>
           </div>
 
           <div class="design-goal">
             <span>02</span>
-            <h3>Modular</h3>
+            <h3>Replaceable mounts</h3>
             <p>
-              Allow individual mounts and internal structures to be replaced or
-              redesigned without rebuilding the entire chassis.
+              Revise one holder without rebuilding the lower chassis.
             </p>
           </div>
 
           <div class="design-goal">
             <span>03</span>
-            <h3>3D Printable</h3>
+            <h3>Printable parts</h3>
             <p>
-              Develop the primary mechanical architecture around additive
-              manufacturing and rapid design iteration.
+              Split the body into FDM-friendly parts.
             </p>
           </div>
 
           <div class="design-goal">
             <span>04</span>
-            <h3>Serviceable</h3>
+            <h3>Hardware access</h3>
             <p>
-              Maintain access to internal hardware for assembly, maintenance,
-              troubleshooting, and future upgrades.
+              Keep connectors and fasteners reachable after assembly.
             </p>
           </div>
 
@@ -245,16 +230,12 @@
       <div class="container">
 
         <div class="section-kicker">
-          03 — CHASSIS ARCHITECTURE
+          03 — LOWER CHASSIS
         </div>
 
         <div class="section-head">
-          <h2>The mechanical foundation</h2>
+          <h2>Where the parts attach</h2>
 
-          <p>
-            Removing the exterior shell reveals the mounting structure beneath
-            the finished form.
-          </p>
         </div>
 
 
@@ -268,13 +249,11 @@
 
         <div class="image-description">
 
-          <h3>Lower Chassis & Internal Structure</h3>
+          <h3>Lower chassis and internal structure</h3>
 
           <p>
-            The lower chassis provides the structural foundation for the Nomad
-            mechanical system. Internal posts, mounting locations, walls,
-            openings, and clearance geometry provide defined locations for
-            subsystem hardware while supporting the removable upper structure.
+            The lower chassis locates each mount. Posts and openings add support and clearance
+            beneath the upper structure.
           </p>
 
         </div>
@@ -289,16 +268,12 @@
       <div class="container">
 
         <div class="section-kicker">
-          04 — SUBSYSTEM PACKAGING
+          04 — COMPONENT MOUNTS
         </div>
 
         <div class="section-head">
-          <h2>Hardware-specific mounting</h2>
+          <h2>Mounts built around the actual hardware</h2>
 
-          <p>
-            Instead of treating every internal component as a generic block,
-            Nomad uses mounting structures designed around specific hardware.
-          </p>
         </div>
 
 
@@ -317,13 +292,10 @@
                 COMPONENT HOLDERS
               </span>
 
-              <h3>Subsystem mounting structures</h3>
+              <h3>Camera, speaker, and motor holders</h3>
 
               <p>
-                Mounting structures were developed for the speakers,
-                Raspberry Pi Camera Module 3 Wide NoIR, and drivetrain motors.
-                These components establish repeatable positions for hardware
-                inside the chassis.
+                Separate holders locate the speakers, Camera Module 3 Wide NoIR, and drivetrain motors.
               </p>
 
             </div>
@@ -348,9 +320,7 @@
               <h3>Mounts integrated into the chassis</h3>
 
               <p>
-                The individual mounting structures are positioned inside the
-                lower chassis to evaluate alignment, available volume, component
-                relationships, and interference with surrounding structures.
+                The assembly shows space conflicts before I change a holder or the chassis.
               </p>
 
             </div>
@@ -388,18 +358,12 @@
               RASPBERRY PI INTEGRATION
             </span>
 
-            <h2>Using vertical space</h2>
+            <h2>The Raspberry Pi moved upward</h2>
 
             <p>
-              The Raspberry Pi mounting structure sits above lower-mounted
-              subsystems, allowing Nomad to use the available vertical volume
-              instead of placing every component on a single plane.
+              I ran out of floor space, so I moved the Pi onto a deck above the lower components.
             </p>
 
-            <p>
-              This layered layout helps separate major subsystem groups while
-              preserving the compact exterior dimensions of the platform.
-            </p>
 
           </div>
 
@@ -426,18 +390,14 @@
               POWER CONVERSION
             </span>
 
-            <h2>Dedicated power-electronics mounting</h2>
+            <h2>The buck converter gets its own holder</h2>
 
             <p>
-              A dedicated buck converter mounting location was incorporated into
-              the internal architecture rather than leaving the power electronics
-              unsupported inside the enclosure.
+              I added a fixed holder so the buck converter is not loose inside the enclosure.
             </p>
 
             <p>
-              Providing defined locations for power, compute, drivetrain,
-              camera, and audio hardware helps make the overall system easier
-              to assemble and refine as the design develops.
+              The final position still needs wiring clearance and terminal access.
             </p>
 
           </div>
@@ -468,13 +428,9 @@
         <div class="section-head">
 
           <h2>
-            Current printable architecture
+            Current printable assembly
           </h2>
 
-          <p>
-            The current mechanical assembly combines the main structures
-            developed so far into one internal packaging system.
-          </p>
 
         </div>
 
@@ -497,10 +453,8 @@
             <h3>3D-printable components</h3>
 
             <p>
-              The current CAD assembly includes the lower chassis, component
-              mounting structures, Raspberry Pi mounting structure, buck
-              converter holder, upper electronics deck, and supporting internal
-              geometry.
+              The assembly contains the chassis, component holders, Pi deck, converter holder,
+              electronics deck, and shell concepts.
             </p>
           </div>
 
@@ -510,12 +464,10 @@
               DESIGN APPROACH
             </span>
 
-            <h3>Modular additive manufacturing</h3>
+            <h3>Parts I can revise separately</h3>
 
             <p>
-              The internal architecture is being split into replaceable printed
-              components so individual structures can be modified and
-              reprinted as hardware requirements change.
+              Separate printed holders let me update a camera or converter mount without discarding the chassis.
             </p>
           </div>
 
@@ -542,10 +494,10 @@
               CURRENT DEVELOPMENT
             </span>
 
-            <h2>Designed / being developed</h2>
+            <h2>Modeled or being revised</h2>
 
             <ul>
-              <li>Lower chassis architecture</li>
+              <li>Lower chassis</li>
               <li>Exterior shell concepts</li>
               <li>Camera mounting</li>
               <li>Speaker mounting</li>
@@ -553,7 +505,7 @@
               <li>Raspberry Pi packaging</li>
               <li>Buck converter mounting</li>
               <li>Electronics deck</li>
-              <li>Modular 3D-printable structure</li>
+              <li>Separate 3D-printable mounts</li>
             </ul>
 
           </div>
@@ -604,8 +556,7 @@
             </h2>
 
             <p>
-              CAD downloads and an interactive 3D model viewer can be added here
-              as the Nomad mechanical design becomes ready for public release.
+              I have not published the CAD. A viewer and STEP file will follow when it stabilizes.
             </p>
 
           </div>
