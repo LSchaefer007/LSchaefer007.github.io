@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engineering portfolio of Logan Schaefer — mechanical engineering, mechatronics, CAD, prototyping, additive manufacturing, and robotics." />
+  <title>Logan Schaefer | Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">LS<span>.</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">MECHANICAL ENGINEERING · MECHATRONICS · PROTOTYPING</div>
+          <h1>I build ideas into <span>working systems.</span></h1>
+          <p class="hero-copy">
+            I’m Logan Schaefer, an engineering student focused on mechanical design,
+            additive manufacturing, robotics, and hands-on problem solving—from concept
+            and CAD through fabrication, testing, and iteration.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>Central College</strong><span>B.S. Engineering · Mechatronics Emphasis</span></div>
+            <div><strong>2030</strong><span>Expected Graduation</span></div>
+            <div><strong>Summer 2027</strong><span>Seeking Engineering Internship</span></div>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-hidden="true">
+          <div class="panel-label">ENGINEERING FOCUS</div>
+          <div class="system-line"><span>01</span><strong>Design</strong><em>CAD · GD&T · packaging</em></div>
+          <div class="system-line"><span>02</span><strong>Build</strong><em>Machining · welding · additive</em></div>
+          <div class="system-line"><span>03</span><strong>Integrate</strong><em>Raspberry Pi · software · hardware</em></div>
+          <div class="system-line"><span>04</span><strong>Test</strong><em>Measure · troubleshoot · validate</em></div>
+          <div class="system-line"><span>05</span><strong>Iterate</strong><em>Improve · simplify · refine</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-kicker">SELECTED WORK</div>
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Projects that combine mechanical thinking, software, robotics, and rapid prototyping.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div class="project-top">
+              <span class="project-index">01</span>
+              <span class="status">EARLY DEVELOPMENT</span>
+            </div>
+            <h3>AXIS Nomad</h3>
+            <p class="project-subtitle">Mobile robotics + additive manufacturing platform</p>
+            <p>
+              An early-stage compact mobile robotics concept designed as a physical AXIS endpoint.
+              Current work focuses on Raspberry Pi integration, modular mechanical packaging,
+              design for additive manufacturing, serviceability, and future subsystem interfaces.
+            </p>
+            <div class="tags">
+              <span>DfAM</span><span>Raspberry Pi</span><span>Robotics</span><span>CAD</span><span>System Integration</span>
+            </div>
+            <div class="project-note">
+              <strong>Current focus:</strong> packaging, 3D-printed structures, camera/electronics placement, and modular architecture.
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-index">02</span>
+              <span class="status">ACTIVE</span>
+            </div>
+            <h3>AXIS</h3>
+            <p class="project-subtitle">Local AI engineering system</p>
+            <p>
+              A modular local AI assistant concept integrating software, computer vision,
+              hardware endpoints, engineering workflows, and local inference. I define
+              requirements and system direction, then use AI-assisted development tools to
+              support implementation while reviewing, testing, troubleshooting, and validating behavior.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>FastAPI</span><span>Linux</span><span>OpenCV</span><span>Systems</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-index">03</span>
+              <span class="status">PORTFOLIO SLOT</span>
+            </div>
+            <h3>CAD / Fabrication Project</h3>
+            <p class="project-subtitle">Add your strongest physical build here</p>
+            <p>
+              This slot is intentionally reserved for a visual, hands-on project showing
+              design decisions, drawings, manufacturing, assembly, testing, and final results.
+              A polished school project, machined part, welded assembly, or 3D-printed mechanism would work well.
+            </p>
+            <div class="tags">
+              <span>SolidWorks</span><span>GD&T</span><span>Machining</span><span>Prototyping</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-kicker">CAPABILITIES</div>
+        <div class="section-head">
+          <h2>Technical Skills</h2>
+          <p>A mechanical-first toolkit with enough software and electronics exposure to work across system boundaries.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Mechanical Design</h3>
+            <p>SolidWorks · Fusion 360 · Blender · engineering drawings · GD&T · design iteration</p>
+          </div>
+          <div class="skill-group">
+            <h3>Manufacturing</h3>
+            <p>3D printing · CNC equipment · manual mill · manual lathe · MIG welding · plasma cutting</p>
+          </div>
+          <div class="skill-group">
+            <h3>Robotics / Computing</h3>
+            <p>Raspberry Pi · Python · Linux · FastAPI · OpenCV · hardware/software integration</p>
+          </div>
+          <div class="skill-group">
+            <h3>Engineering Approach</h3>
+            <p>Rapid prototyping · troubleshooting · component packaging · manufacturability · testing · iteration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-kicker">BACKGROUND</div>
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Technical work is only part of engineering; reliability, communication, and decision-making matter too.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2025–2030</div>
+            <div>
+              <h3>Central College</h3>
+              <p class="muted">B.S. Engineering · Mechatronics Emphasis</p>
+              <p>Coursework and project work spanning mechanical design, engineering fundamentals, computing, and multidisciplinary systems.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024–Present</div>
+            <div>
+              <h3>Lifeguard & Lifeguard Instructor</h3>
+              <p class="muted">White Water Junction / RIFAC · Rock Island, Illinois</p>
+              <p>Safety-critical work requiring rapid decisions, clear communication, procedural discipline, instruction, and calm performance under pressure.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Current</div>
+            <div>
+              <h3>Collegiate Goalkeeper</h3>
+              <p class="muted">Central College</p>
+              <p>Competitive athletics requiring preparation, communication, resilience, fast decision-making, and consistent performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="section-kicker">ABOUT</div>
+          <h2>Why engineering?</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I’m most interested in engineering when a problem crosses traditional boundaries.
+            I like taking an idea, understanding how the pieces need to interact, creating a design,
+            building it, finding what fails, and improving the next version.
+          </p>
+          <p>
+            My long-term focus is mechanical engineering and product development, with robotics,
+            automation, additive manufacturing, and software as supporting tools for building more capable physical systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-wrap">
+        <div>
+          <div class="section-kicker">CONTACT</div>
+          <h2>Looking for Summer 2027 engineering opportunities.</h2>
+          <p>Mechanical design, product development, prototyping, manufacturing, robotics, and mechatronics.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:loganschaefer.eng@gmail.com">loganschaefer.eng@gmail.com</a>
+          <a href="https://www.linkedin.com/in/logan-schaefer-3a1885432" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© <span id="year"></span> Logan Schaefer</span>
+      <span>Engineering Portfolio</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
