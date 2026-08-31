@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="AXIS engineering project by Logan Schaefer — a local-first personal AI and engineering platform integrating local models, memory, planning, interfaces, and procedural CAD."
+  />
+  <title>AXIS | Logan Schaefer Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">LS<span>.</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#about">About</a>
+        <a class="nav-cta" href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="axis-case-hero">
+      <div class="container">
+        <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+
+        <div class="axis-case-hero-grid">
+          <div class="axis-case-intro">
+            <div class="eyebrow">SYSTEMS ENGINEERING · LOCAL AI · INTEGRATION</div>
+            <h1>AXIS</h1>
+            <p class="axis-case-subtitle">Local-first personal AI + engineering platform</p>
+            <p class="axis-case-lead">
+              AXIS connects local AI, memory and context, planning, engineering tools, and multiple
+              interfaces inside one modular system. It is an active prototype built to turn separate
+              capabilities into a coordinated, testable workflow.
+            </p>
+
+            <div class="tags axis-case-tags">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>Ollama</span>
+              <span>Local AI</span>
+              <span>System Integration</span>
+              <span>Blender / CAD</span>
+            </div>
+
+            <div class="axis-hero-facts" aria-label="AXIS project facts">
+              <div><span>STATUS</span><strong>Active prototype</strong></div>
+              <div><span>RUNTIME</span><strong>Private + local-first</strong></div>
+              <div><span>FOCUS</span><strong>Integration + validation</strong></div>
+            </div>
+          </div>
+
+          <figure class="axis-hud-figure">
+            <div class="axis-hud-frame">
+              <div class="axis-hud-frame-bar" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <small>AXIS MOBILE HUD</small>
+              </div>
+              <img
+                src="../images/axis/axis-hud-chat.jpg"
+                alt="Sanitized AXIS mobile HUD showing a connected chat interface and a degraded-health response"
+              >
+            </div>
+            <figcaption>Real AXIS mobile interface · sanitized validation capture</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="axis-origin">
+      <div class="container axis-origin-grid">
+        <div>
+          <div class="section-kicker">WHY I STARTED IT</div>
+          <h2>Built to connect the pieces.</h2>
+        </div>
+        <div class="axis-origin-copy">
+          <p>
+            AXIS started as a personal local assistant. As I added memory, planning, external services,
+            interfaces, and engineering tools, the real challenge became systems integration: making each
+            part useful without losing reliability, privacy, or control.
+          </p>
+          <div class="axis-origin-path" aria-label="AXIS project expansion">
+            <span>Local assistant</span><i>→</i><span>Context + planning</span><i>→</i><span>Engineering platform</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section axis-architecture-section">
+      <div class="container">
+        <div class="axis-section-title">
+          <div>
+            <div class="section-kicker">SYSTEM ARCHITECTURE</div>
+            <h2>One control layer. Multiple specialized systems.</h2>
+          </div>
+          <p>Requests move through explicit context, permission, execution, and verification stages.</p>
+        </div>
+
+        <div class="axis-architecture-map" role="img" aria-label="AXIS architecture from user interfaces through FastAPI, intent, context, permissions, local AI, memory, tools, and verification">
+          <div class="axis-architecture-entry">
+            <span>USER / INTERFACES</span>
+            <strong>HUD · mobile · tablet · paired clients</strong>
+          </div>
+          <div class="axis-map-down" aria-hidden="true">↓</div>
+          <div class="axis-architecture-control">
+            <span>FASTAPI CONTROL LAYER</span>
+            <strong>Routes · sessions · permissions · rate limits · audit</strong>
+          </div>
+          <div class="axis-map-down" aria-hidden="true">↓</div>
+          <div class="axis-architecture-core">
+            <span>INTENT</span><b>+</b><span>BOUNDED CONTEXT</span><b>+</b><span>PERMISSION CHECKS</span>
+          </div>
+          <div class="axis-map-down" aria-hidden="true">↓</div>
+          <div class="axis-architecture-branches">
+            <div>
+              <div class="axis-branch-head"><span class="axis-status partial">PARTIAL</span><small>LOCAL AI</small></div>
+              <strong>Ollama + model gateway</strong>
+              <p>Loopback-only inference with bounded retries, timeouts, and concurrency.</p>
+            </div>
+            <div>
+              <div class="axis-branch-head"><span class="axis-status working">WORKING</span><small>MEMORY</small></div>
+              <strong>Retrieval + context</strong>
+              <p>Authorized ingestion, keyword search, optional local embeddings, and provenance.</p>
+            </div>
+            <div>
+              <div class="axis-branch-head"><span class="axis-status partial">MIXED MATURITY</span><small>TOOLS</small></div>
+              <strong>Tasks · calendar · voice · CAD</strong>
+              <p>Deterministic services with protected actions and explicit degraded states.</p>
+            </div>
+          </div>
+          <div class="axis-map-down" aria-hidden="true">↓</div>
+          <div class="axis-architecture-output">
+            <span>VERIFICATION + STATE + DIAGNOSTICS</span>
+            <strong>Evidence before success</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt axis-systems-section">
+      <div class="container">
+        <div class="axis-section-title">
+          <div>
+            <div class="section-kicker">CORE SYSTEMS</div>
+            <h2>What AXIS can do today</h2>
+          </div>
+          <p>Six of the strongest implemented or actively integrated systems.</p>
+        </div>
+
+        <div class="axis-system-list">
+          <article>
+            <span class="axis-system-number">01</span>
+            <div><h3>Coordinate protected actions</h3><p>FastAPI routes sit behind roles, sessions, rate limits, and audit logging.</p></div>
+            <div class="axis-system-meta"><span class="axis-status working">WORKING</span><small>FastAPI · PBKDF2</small></div>
+          </article>
+          <article>
+            <span class="axis-system-number">02</span>
+            <div><h3>Retrieve useful local context</h3><p>Source permissions, chunk provenance, hybrid ranking, and keyword fallback keep retrieval bounded.</p></div>
+            <div class="axis-system-meta"><span class="axis-status working">WORKING</span><small>Python · local embeddings</small></div>
+          </article>
+          <article>
+            <span class="axis-system-number">03</span>
+            <div><h3>Plan and prioritize work</h3><p>Tasks, due dates, urgency scoring, schedule gaps, and state recommendations share one workflow.</p></div>
+            <div class="axis-system-meta"><span class="axis-status working">WORKING</span><small>JSON state · deterministic logic</small></div>
+          </article>
+          <article>
+            <span class="axis-system-number">04</span>
+            <div><h3>Run local model requests</h3><p>The approved model gateway stays on loopback and reports timeout, unavailable, and degraded states.</p></div>
+            <div class="axis-system-meta"><span class="axis-status partial">PARTIAL</span><small>Ollama · local models</small></div>
+          </article>
+          <article>
+            <span class="axis-system-number">05</span>
+            <div><h3>Connect personal services</h3><p>Calendar, Gmail, local voice, and responsive HUD clients are implemented but configuration-dependent.</p></div>
+            <div class="axis-system-meta"><span class="axis-status partial">PARTIAL</span><small>Google APIs · Piper · JS</small></div>
+          </article>
+          <article>
+            <span class="axis-system-number">06</span>
+            <div><h3>Generate procedural 3D models</h3><p>Bounded prompts drive Blender generation, previews, model records, and preliminary mesh checks.</p></div>
+            <div class="axis-system-meta"><span class="axis-status experimental">EXPERIMENTAL</span><small>Blender · STL</small></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section axis-lifecycle-section">
+      <div class="container">
+        <div class="section-kicker">REPRESENTATIVE REQUEST</div>
+        <div class="axis-lifecycle-head">
+          <h2>More than a chatbot wrapper.</h2>
+          <p>A coordinated request moves through eight explicit stages.</p>
+        </div>
+        <ol class="axis-request-flow">
+          <li><span>01</span><strong>User request</strong></li>
+          <li><span>02</span><strong>Intent</strong></li>
+          <li><span>03</span><strong>Context</strong></li>
+          <li><span>04</span><strong>Permission</strong></li>
+          <li><span>05</span><strong>Tool / model</strong></li>
+          <li><span>06</span><strong>Verification</strong></li>
+          <li><span>07</span><strong>Response</strong></li>
+          <li><span>08</span><strong>State + diagnostics</strong></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section alt axis-challenges-section">
+      <div class="container">
+        <div class="axis-section-title">
+          <div>
+            <div class="section-kicker">ENGINEERING CHALLENGES</div>
+            <h2>Problems solved at the boundaries</h2>
+          </div>
+          <p>The project grows by improving controls and evidence—not by simply adding routes.</p>
+        </div>
+
+        <div class="axis-challenge-grid">
+          <article>
+            <span>SECURITY</span>
+            <h3>How can AI use tools without blindly executing?</h3>
+            <p>Role checks, approval states, lockdown behavior, and permissioned tool records separate planning from execution.</p>
+          </article>
+          <article>
+            <span>RELIABILITY</span>
+            <h3>Does an available route mean the action worked?</h3>
+            <p>No. AXIS tracks success, partial success, denial, timeout, failure, and unverifiable evidence separately.</p>
+          </article>
+          <article>
+            <span>MODULARITY</span>
+            <h3>How does the platform expand without one giant server?</h3>
+            <p>Newer routers, services, and core modules isolate ownership while legacy direct paths remain explicit migration work.</p>
+          </article>
+          <article>
+            <span>PRIVACY</span>
+            <h3>How does personal context stay locally bounded?</h3>
+            <p>Loopback model gateways, source permissions, redaction, private runtime paths, and release allowlists define the boundary.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section axis-validation-section">
+      <div class="container">
+        <div class="axis-validation-layout">
+          <div class="axis-validation-copy">
+            <div class="section-kicker">TESTING + DEBUGGING</div>
+            <h2>Preserve correct behavior—even when a test says otherwise.</h2>
+            <p>
+              Five targeted failures expected protected routes to return HTTP 200. Investigation showed
+              the current middleware correctly returned 403, so the stale expectations—not authentication—needed revision.
+            </p>
+            <div class="axis-debug-flow" aria-label="Debugging workflow">
+              <span>Test</span><i>→</i><span>Failure</span><i>→</i><span>Investigate</span><i>→</i><span>Protect behavior</span>
+            </div>
+          </div>
+
+          <div class="axis-validation-metrics">
+            <div class="axis-metric primary"><strong>PASS</strong><span>Governed fast gate</span></div>
+            <div class="axis-metric"><strong>127 / 132</strong><span>Targeted subsystem tests</span></div>
+            <div class="axis-metric"><strong>5</strong><span>Stale status-code expectations</span></div>
+            <div class="axis-metric muted"><strong>NOT CLAIMED</strong><span>Full suite + live integrations</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt axis-evolution-section">
+      <div class="container">
+        <div class="axis-section-title">
+          <div>
+            <div class="section-kicker">PROJECT EVOLUTION</div>
+            <h2>From local assistant to engineering platform</h2>
+          </div>
+          <p>Each stage added a new integration problem and a new validation boundary.</p>
+        </div>
+
+        <ol class="axis-evolution-timeline">
+          <li><span>01</span><strong>Local AI</strong><small>Private inference</small></li>
+          <li><span>02</span><strong>Memory + context</strong><small>Bounded retrieval</small></li>
+          <li><span>03</span><strong>Tasks + state</strong><small>Planning logic</small></li>
+          <li><span>04</span><strong>HUD + clients</strong><small>Operator interfaces</small></li>
+          <li><span>05</span><strong>Integrations</strong><small>Calendar · Gmail · voice</small></li>
+          <li><span>06</span><strong>Engineering tools</strong><small>Procedural CAD</small></li>
+          <li class="future"><span>07</span><strong>Physical direction</strong><small>Nomad · early development</small></li>
+        </ol>
+
+        <a class="axis-nomad-link" href="nomad.html">
+          <span>FUTURE PHYSICAL EXTENSION</span>
+          <strong>See the separate AXIS Nomad project →</strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="section axis-closing-section">
+      <div class="container axis-closing-grid">
+        <div class="axis-workflow-compact">
+          <div class="section-kicker">DEVELOPMENT WORKFLOW</div>
+          <p>
+            I define AXIS requirements, architecture goals, integrations, and validation criteria,
+            then use AI-assisted development tools to help implement and iterate. I review, integrate,
+            test, troubleshoot, and validate the resulting system.
+          </p>
+          <div class="axis-workflow-steps">
+            <span>Specify</span><i>→</i><span>Assist</span><i>→</i><span>Review</span><i>→</i><span>Integrate</span><i>→</i><span>Test</span><i>→</i><span>Iterate</span>
+          </div>
+        </div>
+
+        <div class="axis-next-directions">
+          <div class="section-kicker">NEXT ENGINEERING DIRECTIONS</div>
+          <ul>
+            <li>Consolidate legacy assistant paths</li>
+            <li>Strengthen live integration validation</li>
+            <li>Improve procedural CAD quality checks</li>
+            <li>Prepare a sanitized public-source release</li>
+          </ul>
+          <p class="axis-private-note">The active source repository remains private because it contains personal runtime state and integration configuration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <a class="next-project" href="../index.html#projects">
+          <span>BACK TO PORTFOLIO</span>
+          <strong>View all projects →</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© <span id="year"></span> Logan Schaefer</span>
+      <span>AXIS · Engineering Portfolio</span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
